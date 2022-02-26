@@ -1,0 +1,706 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  background-color: #D9D9D9; }
+
+.mainIndex .proyectos, .mainNosotros .conocenos .conocenosImg h2, .slogPages h1, .slogPagesProy h1 {
+  font-family: "Graduate", cursive;
+  text-shadow: 7px 7px 7px #212529; }
+
+.mainObras .imagenesObras h3, .mainExt h3, footer .redes h3, footer .contactFooter h3 {
+  font-family: "Graduate", cursive;
+  text-shadow: 5px 5px 5px dimgray; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 0.75rem; }
+
+p {
+  font-size: 1rem; }
+
+body {
+  background-color: #D9D9D9; }
+
+.mainIndex {
+  margin-top: 150px; }
+  .mainIndex .slogan {
+    background-image: url(../images/img-index/fondo-slogan.jpg);
+    color: #D9D9D9;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 7px 7px 7px #212529;
+    max-height: 315px;
+    min-height: 315px;
+    margin-bottom: 50px; }
+    .mainIndex .slogan h1 {
+      margin: 25px 0px 25px 0px;
+      font-family: "Graduate", cursive; }
+    .mainIndex .slogan p {
+      margin: 40px 20px 0px 20px;
+      font-family: "Chelsea Market", cursive;
+      font-size: 1.5rem; }
+  .mainIndex .proyectos {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #D9D9D9; }
+    .mainIndex .proyectos img {
+      background-position: center; }
+    .mainIndex .proyectos .brQmedia {
+      display: none; }
+    .mainIndex .proyectos .proy-obra {
+      margin-top: 10px; }
+      .mainIndex .proyectos .proy-obra .proyObrasAnimation2 {
+        transition: all 1s; }
+        .mainIndex .proyectos .proy-obra .proyObrasAnimation2 img {
+          border-radius: 50%;
+          height: 400px;
+          width: 400px; }
+        .mainIndex .proyectos .proy-obra .proyObrasAnimation2:hover {
+          opacity: 20%; }
+    .mainIndex .proyectos .idContacto {
+      margin-top: 360px; }
+    .mainIndex .proyectos .proy-ext {
+      margin-top: 10px; }
+      .mainIndex .proyectos .proy-ext .proyExtAnimation2 {
+        transition: all 1s; }
+        .mainIndex .proyectos .proy-ext .proyExtAnimation2 img {
+          border-radius: 50%;
+          height: 400px;
+          width: 400px; }
+        .mainIndex .proyectos .proy-ext .proyExtAnimation2:hover {
+          opacity: 20%; }
+  .mainIndex .contacto {
+    background-color: #D9D9D9;
+    height: 500px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "Chelsea Market", cursive; }
+    .mainIndex .contacto .contactForm {
+      width: 600px;
+      margin: 10px;
+      height: 30px;
+      font-weight: bolder; }
+      .mainIndex .contacto .contactForm legend {
+        text-align: center;
+        text-shadow: 5px 5px 5px dimgray;
+        font-family: "Graduate", cursive; }
+      .mainIndex .contacto .contactForm input {
+        width: 600px;
+        margin: 10px;
+        height: 30px; }
+      .mainIndex .contacto .contactForm .paddingForm {
+        padding: 5px; }
+      .mainIndex .contacto .contactForm select {
+        width: 200px;
+        margin: 10px;
+        height: 30px;
+        font-weight: bolder;
+        color: #D9D9D9;
+        background-color: #212529; }
+        .mainIndex .contacto .contactForm select:hover {
+          background-color: #212529; }
+      .mainIndex .contacto .contactForm textarea {
+        width: 600px;
+        height: 90px;
+        margin-left: 10px; }
+
+@media (max-width: 1320px) {
+  .mainIndex .proyectos h2 {
+    font-size: 2.5rem; }
+  .mainIndex .slogan p {
+    font-size: 1.25rem; } }
+
+@media (max-width: 1190px) {
+  .mainIndex .slogan h1 {
+    font-size: 3rem; }
+  .mainIndex .proyectos h2 {
+    font-size: 2rem; }
+  .mainIndex .proyectos .proy-obra .proyObrasAnimation2 img {
+    width: 80%;
+    height: 80%; }
+  .mainIndex .proyectos .proy-ext .proyExtAnimation2 img {
+    width: 80%;
+    height: 80%; }
+  .mainIndex .contacto {
+    margin-bottom: 0px; } }
+
+@media (max-width: 900px) {
+  .mainIndex .proyectos h2 .brQmedia {
+    display: block; } }
+
+@media (max-width: 800px) {
+  .mainIndex .contacto {
+    margin-top: 10px; } }
+
+@media (max-width: 700px) {
+  .mainIndex .contacto {
+    margin-top: -20px; } }
+
+@media (max-width: 670px) {
+  .mainIndex .slogan p {
+    font-size: 1rem; }
+  .mainIndex .contacto .contactForm {
+    width: 300px; }
+    .mainIndex .contacto .contactForm input {
+      width: 300px; }
+    .mainIndex .contacto .contactForm textarea {
+      width: 300px;
+      height: 120px; } }
+
+@media (max-width: 600px) {
+  .mainIndex .contacto {
+    margin-top: -40px; } }
+
+@media (max-width: 500px) {
+  .mainIndex .contacto {
+    margin-top: -80px; } }
+
+@media (max-width: 475px) {
+  .mainIndex .slogan h1 {
+    font-size: 2rem; }
+  .mainIndex .proyectos h2 {
+    font-size: 1.5rem; }
+  .mainIndex .contacto {
+    margin-top: -140px; } }
+
+@media (max-width: 360px) {
+  .mainIndex .slogan h1 {
+    font-size: 1.5rem; }
+  .mainIndex .slogan p {
+    font-size: 0.8rem;
+    line-height: 30px; }
+  .mainIndex .proyectos h2 {
+    font-size: 1.25rem; }
+  .mainIndex .contacto {
+    margin-top: -200px; }
+    .mainIndex .contacto .contactForm {
+      width: 200px; }
+      .mainIndex .contacto .contactForm input {
+        width: 200px; }
+      .mainIndex .contacto .contactForm textarea {
+        width: 200px;
+        height: 150px; } }
+
+.mainNosotros {
+  margin-bottom: 50px; }
+  .mainNosotros .conocenos {
+    margin-left: 0.25px; }
+    .mainNosotros .conocenos .conocenosImg {
+      background-image: url(../images/img-nosotros/fondo-nosotros.jpg);
+      background-repeat: no-repeat;
+      height: 100vh; }
+      .mainNosotros .conocenos .conocenosImg h2 {
+        margin-top: 30px;
+        text-align: center;
+        letter-spacing: 10px;
+        color: black; }
+        .mainNosotros .conocenos .conocenosImg h2:hover {
+          transform: scale(1.1);
+          transition-property: all;
+          transition-duration: 1s;
+          cursor: default; }
+    .mainNosotros .conocenos .conocenosText {
+      text-align: justify; }
+      .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros {
+        color: white;
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        background-color: #000000;
+        text-align: center;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros img {
+          opacity: 0.9;
+          margin-top: 5%;
+          width: 90%;
+          height: 90%; }
+        .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption h3, .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s; }
+          .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption h3 {
+            font-family: "Graduate", cursive;
+            font-weight: 300;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin: 10px 30px 15px 30px;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0); }
+            .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption h3 span {
+              font-weight: 800;
+              font-size: 1.2rem; }
+          .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption p {
+            font-size: 0.9rem;
+            font-weight: 200;
+            margin-left: 20px;
+            margin-right: 20px; }
+          .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute; }
+          .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption:hover h3 {
+            opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s; }
+          .mainNosotros .conocenos .conocenosText .container figure.imagenesNosotros figcaption:hover p {
+            opacity: 1;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s; }
+    .mainNosotros .conocenos p {
+      margin: 20px 30px 20px 30px;
+      font-family: "Chelsea Market", cursive;
+      font-size: 1.2rem; }
+
+@media (max-width: 1000px) {
+  .mainNosotros .conocenos .nosotrosQmedia {
+    display: none; }
+  .mainNosotros .conocenos p {
+    font-size: 1.4rem; } }
+
+@media (max-width: 900px) {
+  .mainNosotros {
+    margin-bottom: 0px; } }
+
+@media (max-width: 525px) {
+  .mainNosotros .conocenos .conocenosText p {
+    font-size: 1rem; }
+  .mainNosotros .conocenos .conocenosText .row {
+    flex-direction: column;
+    align-content: center; } }
+
+@media (max-width: 430px) {
+  .mainNosotros .conocenos .conocenosText p {
+    font-size: 0.9rem; } }
+
+@media (max-width: 400px) {
+  .mainNosotros .conocenos .conocenosText .row {
+    margin-left: -50px; } }
+
+.mainObras {
+  margin-bottom: 50px; }
+  .mainObras .imagenesObras {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .mainObras .imagenesObras figure img {
+      max-width: 350px;
+      max-height: 350px; }
+      .mainObras .imagenesObras figure img:hover {
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 15px dimgray;
+        -webkit-box-shadow: 0px 0px 5px 5px black;
+        transform: scale(1.05);
+        transition: all 2s; }
+    .mainObras .imagenesObras h4 {
+      font-family: "Graduate", cursive;
+      text-align: center;
+      padding: 10px;
+      text-decoration: underline; }
+    .mainObras .imagenesObras p {
+      font-family: "Chelsea Market", cursive;
+      text-align: center;
+      letter-spacing: -0.5px;
+      line-height: 20px;
+      margin-top: 15px; }
+
+@media (max-width: 375px) {
+  .mainObras .imagenesObras {
+    flex-direction: column; }
+    .mainObras .imagenesObras h3 {
+      font-size: 2.5rem; }
+    .mainObras .imagenesObras img {
+      width: 100%;
+      height: 100%; } }
+
+.mainExt {
+  margin-bottom: 50px; }
+  .mainExt h3 {
+    text-align: center;
+    margin-top: 50px; }
+  .mainExt figure.imagenesExterior {
+    font-family: "Graduate", cursive;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    background: #212529;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px; }
+    .mainExt figure.imagenesExterior img {
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: opacity 0.35s;
+      transition: opacity 0.35s; }
+    .mainExt figure.imagenesExterior figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .mainExt figure.imagenesExterior h4, .mainExt figure.imagenesExterior p {
+      margin: 0 0 5px;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s; }
+    .mainExt figure.imagenesExterior h4 {
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0px 20px 30px 20px;
+      -webkit-transform: translate3d(0%, 50%, 0);
+      transform: translate3d(0%, 50%, 0);
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s; }
+      .mainExt figure.imagenesExterior h4 span {
+        font-weight: 800; }
+    .mainExt figure.imagenesExterior p {
+      font-weight: 200;
+      margin-left: 20px;
+      margin-right: 20px;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      font-family: "Chelsea Market", cursive; }
+    .mainExt figure.imagenesExterior a {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute; }
+    .mainExt figure.imagenesExterior:hover img {
+      opacity: 0.35;
+      transform: scale(1.25);
+      transition: transform 2s; }
+    .mainExt figure.imagenesExterior:hover figcaption h4 {
+      opacity: 1;
+      -webkit-transform: translate3d(0%, 0%, 0);
+      transform: translate3d(0%, 0%, 0);
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s; }
+    .mainExt figure.imagenesExterior:hover figcaption p {
+      opacity: 0.9;
+      -webkit-transition-delay: 0.6s;
+      transition-delay: 0.6s; }
+    .mainExt figure.imagenesExterior:hover figcaption:before {
+      background: rgba(255, 255, 255, 0);
+      top: 30px;
+      bottom: 30px;
+      opacity: 1;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+
+@media (max-width: 390px) {
+  .mainObras figure {
+    width: 80%;
+    height: 80%; }
+  .mainObras .imagenesExterior h3 {
+    font-size: 2.5rem; } }
+
+header .navbar {
+  max-height: 150px;
+  min-height: 150px;
+  font-family: "Graduate", cursive; }
+  header .navbar .navbar-brand img {
+    width: 235px;
+    height: 110px; }
+    header .navbar .navbar-brand img:hover {
+      transform: scale(1.15);
+      transition-property: all;
+      transition-duration: 1s; }
+  header .navbar #navbarOffcanvasLg {
+    width: 250px; }
+    header .navbar #navbarOffcanvasLg .subTitulo {
+      font-family: "Chelsea Market", cursive; }
+    header .navbar #navbarOffcanvasLg .dropdown-menu {
+      width: 50%;
+      min-width: 8rem;
+      background-color: #212529; }
+      header .navbar #navbarOffcanvasLg .dropdown-menu a.dropdown-item {
+        color: #fff;
+        text-align: center; }
+  header .navbar .btn {
+    font-size: 120%;
+    margin: 0px 20px 0px -5px; }
+    header .navbar .btn:hover {
+      transform: scale(1.25);
+      transition-property: all;
+      transition-duration: 0.25s; }
+
+@media (max-width: 475px) {
+  header .navbar .navbar-brand img {
+    width: 180px;
+    height: 100px; }
+    header .navbar .navbar-brand img:hover {
+      transform: scale(1.05);
+      transition-property: all;
+      transition-duration: 1s; } }
+
+.slogPages, .slogPagesProy {
+  background-image: url(../images/img-index/fondo-slogan.jpg);
+  min-height: 125px;
+  max-height: 125px;
+  margin-top: 150px;
+  margin-left: 0.25px;
+  margin-right: 0.5px;
+  margin-bottom: 5px; }
+  .slogPages h1, .slogPagesProy h1 {
+    color: #D9D9D9;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    margin: 25px 0px 25px 0px; }
+
+@media (max-width: 975px) {
+  .slogPagesProy h1 {
+    font-size: 3rem;
+    margin-top: 30px; } }
+
+@media (max-width: 780px) {
+  .slogPagesProy h1 {
+    font-size: 2.5rem;
+    margin-top: 40px; } }
+
+@media (max-width: 670px) {
+  .slogPagesProy h1 {
+    font-size: 2.25rem;
+    margin-top: 45px; } }
+
+@media (max-width: 620px) {
+  .slogPagesProy h1 {
+    font-size: 2rem;
+    margin-top: 50px; } }
+
+@media (max-width: 558px) {
+  .slogPagesProy h1 {
+    font-size: 2rem;
+    margin-top: 20px; } }
+
+@media (max-width: 480px) {
+  .slogPages h1 {
+    font-size: 3rem;
+    margin-top: 30px; } }
+
+@media (max-width: 375px) {
+  .slogPages h1 {
+    font-size: 2rem;
+    margin-top: 40px; } }
+
+@media (max-width: 365px) {
+  .slogPagesProy h1 {
+    font-size: 1.5rem;
+    margin-top: 30px; } }
+
+.carousel-inner img {
+  max-height: 70vh; }
+
+.carousel-inner h2 {
+  font-family: "Graduate", cursive;
+  color: white;
+  text-shadow: 10px 10px 10px black; }
+  .carousel-inner h2:hover {
+    transform: scale(1.3);
+    transition-property: all;
+    transition-duration: 1s;
+    color: #D9D9D9; }
+
+.carousel-inner p {
+  font-family: "Chelsea Market", cursive;
+  color: #D9D9D9;
+  text-shadow: 10px 10px 10px black; }
+
+.carousel-inner a {
+  text-decoration: none; }
+
+footer {
+  display: flex;
+  font-family: "Chelsea Market", cursive;
+  background-color: #D9D9D9; }
+  footer .redes {
+    text-align: center;
+    line-height: 2; }
+    footer .redes h3 {
+      font-size: 2rem; }
+    footer .redes ul {
+      display: flex;
+      list-style: none;
+      justify-content: center; }
+      footer .redes ul li {
+        margin: 65px;
+        margin-bottom: 35px; }
+      footer .redes ul .fab01 {
+        color: #212529;
+        font-size: 35px; }
+        footer .redes ul .fab01:hover {
+          color: #3b5998; }
+      footer .redes ul .fab02 {
+        color: #212529;
+        font-size: 35px; }
+        footer .redes ul .fab02:hover {
+          color: #ff0084; }
+      footer .redes ul .fab03 {
+        color: #212529;
+        font-size: 35px; }
+        footer .redes ul .fab03:hover {
+          color: #0a66c2; }
+      footer .redes ul .fab04 {
+        color: #212529;
+        font-size: 35px; }
+        footer .redes ul .fab04:hover {
+          color: #1da1f2; }
+    footer .redes a {
+      text-decoration: none;
+      color: #212529; }
+    footer .redes h4 {
+      margin-top: 10px;
+      text-align: center;
+      margin-left: 100px;
+      margin-right: 100px; }
+      footer .redes h4:hover {
+        transform: scale(1.5);
+        transition-property: all;
+        transition-duration: 2s; }
+  footer .contactFooter {
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2; }
+    footer .contactFooter h3 {
+      font-size: 2rem; }
+    footer .contactFooter li {
+      list-style: none;
+      margin-left: -30px; }
+      footer .contactFooter li iframe {
+        margin-top: 10px;
+        margin-bottom: 20px; }
+
+.animacionRedes a:hover {
+  animation: redes-sociales 2.5s; }
+
+@keyframes redes-sociales {
+  35% {
+    transform: rotate(360deg); }
+  70% {
+    transform: scale(3); } }
+
+@media (max-width: 1270px) {
+  .footer {
+    flex-direction: column;
+    align-items: center; }
+    .footer .redes {
+      margin-top: 50px; }
+    .footer .contactFooter {
+      margin-top: 50px; }
+      .footer .contactFooter h3 {
+        margin-left: -50px;
+        margin-right: -50px; }
+      .footer .contactFooter ul li {
+        margin-right: -30px;
+        margin-left: -30px; } }
+
+@media (max-width: 1000px) {
+  footer .redes {
+    margin-top: 0px; }
+  footer .contactFooter {
+    margin-top: 0px; } }
+
+@media (max-width: 850px) {
+  .mapouter {
+    display: none; }
+  footer .contactFooter h3 {
+    margin-left: -150px;
+    margin-right: -150px; }
+  footer .contactFooter ul {
+    margin-left: -60px;
+    margin-right: -60px; }
+  footer .redes ul li {
+    margin: 30px; }
+  footer .redes p {
+    margin-left: -50px;
+    margin-right: -50px; }
+  footer .redes h4 {
+    margin-left: -50px;
+    margin-right: -50px; }
+    footer .redes h4:hover {
+      transform: scale(1.25); } }
+
+@media (max-width: 575px) {
+  .footer .redes h3 {
+    font-size: 1.5rem; }
+  .footer .redes h4:hover {
+    transform: scale(1.1); }
+    .footer .redes h4:hover h3 {
+      font-size: 1rem; }
+  .footer .redes p {
+    font-size: 0.8rem; }
+  .footer .contactFooter h3 {
+    font-size: 1.5rem; } }
+
+@media (max-width: 390px) {
+  @keyframes redes-sociales {
+    35% {
+      transform: rotate(360deg); }
+    70% {
+      transform: scale(1.5); } }
+  .redes h3 {
+    font-size: 1.1rem; }
+  .redes h4:hover {
+    transform: scale(1.05); }
+    .redes h4:hover h3 {
+      font-size: 0.75rem; }
+  .contactFooter h3 {
+    font-size: 1.1rem; } }
+
+@media (max-width: 380px) {
+  .footer .redes h4:hover {
+    transform: scale(1.05); } }
+
+@media (max-width: 360px) {
+  footer .redes ul li {
+    margin: 10px; }
+  footer .redes p {
+    margin-left: -25px;
+    margin-right: -25px; }
+  footer .redes h4 {
+    margin-left: -25px;
+    margin-right: -25px; }
+    footer .redes h4:hover {
+      transform: scale(1.15); } }
