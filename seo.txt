@@ -1,0 +1,19 @@
+Estos son los pasos que tomé y algunas de las modificaciones que realicé para armar el SEO de mi proyecto:
+1. Le agregué un "alt" descriptivo a cada una de las imágenes que utilicé.
+2. Le agregué h1 y h2 a todas las páginas. Simepre respetando la consigna de tener un único h1 y que todos los hx respeten sus órdenes y jerarquías.
+3. Le agregué una imagen png a las pestañas de mis páginas.
+4. Le agregué/modifiqué el título a cada html utilizando el formato: "MI PROYECTO" | "página".
+5. Agregué entre 5 y 10 keywords a cada página de mi proyecto.
+6. Agregué una descripción del contenido de las páginas de no más de 20 palabras.
+7. Descargué y agregué en mi proyecto el mapa del sitio desde la página "https://www.xml-sitemaps.com/". El archivo se encuentra en la carpeta del proyecto con el nombre "sitemap.xml".
+8. Verifiqué con la herramienta "https://search.google.com/test/mobile-friendly" que la página efectivamente sea mobile-friendly. El resultado del test fue satisfactorio para todas las páginas del pryecto:
+        La página está optimizada para móviles
+        Resulta sencillo navegar por esta página en dispositivos móviles. Más información
+
+Algunas modificaciones realizadas señaladas por la Profe Maru del desafío anterior:
+1. Incluí h1 y h2 en todas las páginas.
+2. Volví a mirar los márgenes e intenté darle mayor espacio y separación a algunos elementos que en el desafío anterior me quedaron feos. 
+3. Me tomé el trabajo de elegir mejores imágenes para el sitio. Casi todas las imagenes las descargué del banco de imágenes "unsplash" o algo así.
+4. Con respecto a las animaciones, intenté mejorarlas. Principalmente las animaciones del footer que hacen referencia a las redes sociales y las animaciones de las páginas "Nosotros" y "Proyectos Exterior". Con respecto a las animaciones de la página "Proyectos Obras" estuve pensando en como modificarlas o que hacer y decidí por el momento dejarlas igual. Mi idea es tomarme el tiempo necesario para poder trabajar sobre este útimo punto. No quería hacer algo tan similar a las anteriores.
+5. Coloqué el "alt" en las imágenes priorizando el concepto de estas. Asimismo, a algunas le coloqué el nombre del proyecto, pero no estoy seguro si eso es adecuado.  
+6. Corregí en su totalidad las media Querys del proyecto logrando que todas las páginas sean totalmente responsive. No sé si está bien, pero tomé como medida mínima 300px. Creo que en la página "Proyectos Exterior" me quedó un poco chueca sobre el final, lo cual intentaré corregir sin falta para el dasfío del miércoles.
