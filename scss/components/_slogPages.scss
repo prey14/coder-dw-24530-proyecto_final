@@ -1,0 +1,85 @@
+// Slogans (Nosotros, Obras y Exterior)
+
+.slogPages, .slogPagesProy{
+    background-image: url(../images/img-index/fondo-slogan.jpg);
+    min-height: 125px;
+    max-height: 125px;
+    margin-top: 150px;
+    margin-left: 0.25px;
+    margin-right: 0.5px;
+    margin-bottom: 5px;
+    h1{
+        @extend %estilosTitulos;
+        color: $color-principal;
+        text-align: center;
+        margin-top: 20px;
+        letter-spacing: 5px;
+        margin: 25px 0px 25px 0px;
+    }
+}
+
+//Media Querys de slogPages
+@media (max-width: 975px){
+    .slogPagesProy{
+        h1{
+            font-size: 3rem;
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 780px){
+    .slogPagesProy{
+        h1{
+            font-size: 2.5rem;
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 670px){
+    .slogPagesProy{
+        h1{
+            font-size: 2.25rem;
+            margin-top: 45px;
+        }
+    }
+}
+@media (max-width: 620px){
+    .slogPagesProy{
+        h1{
+            font-size: 2rem;
+            margin-top: 50px;
+        }
+    }
+}
+@media (max-width: 558px){
+    .slogPagesProy{
+        h1{
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 480px){
+    .slogPages{
+        h1{
+            font-size: 3rem;
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 375px){
+    .slogPages{
+        h1{
+            font-size: 2rem;
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 365px){
+    .slogPagesProy{
+        h1{
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+    }
+}

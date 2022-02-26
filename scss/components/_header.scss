@@ -1,0 +1,63 @@
+// HEADER
+
+
+header{
+    .navbar{
+        max-height: 150px;
+        min-height: 150px;
+        font-family: $letra-principal;
+        .navbar-brand{
+            img{
+                width: 235px;
+                height: 110px;
+                &:hover{
+                    transform: scale(1.15);
+                    transition-property: all;
+                    transition-duration: 1s;
+                }
+            }
+        }
+        #navbarOffcanvasLg{
+            width: 250px;
+            .subTitulo{
+                font-family: $letra-secundaria;
+            }
+            .dropdown-menu{
+                width: 50%;
+                min-width: 8rem;
+                background-color: $color-negrito;
+                a.dropdown-item{
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+        }
+        .btn{
+            font-size: 120%;
+            margin: 0px 20px 0px -5px;
+            &:hover{
+                transform: scale(1.25);
+                transition-property: all;
+                transition-duration: 0.25s;
+            }
+        }
+    }
+}
+
+@media (max-width: 475px){
+    header{
+        .navbar{
+            .navbar-brand{
+                img{
+                    width: 180px;
+                    height: 100px;
+                    &:hover{
+                        transform: scale(1.05);
+                        transition-property: all;
+                        transition-duration: 1s;
+                    }
+                }    
+            }
+        }
+    }
+}

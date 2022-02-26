@@ -1,0 +1,30 @@
+// Estilos de letras
+$letra-principal: 'Graduate', cursive;
+$letra-secundaria: 'Chelsea Market', cursive;
+
+
+// EXTEND
+%estilosTitulos{
+    font-family: $letra-principal;
+    text-shadow: 7px 7px 7px $color-negrito;
+}
+%estilosSubTitulos{
+    font-family: $letra-principal;
+    text-shadow: 5px 5px 5px dimgray;
+}
+
+
+// MAP
+$font-sizes: (
+    h1: 4rem,
+    h2: 3rem,
+    h3: 2.5rem,
+    h4: 1.5rem,
+    h5: 0.75rem,
+    p: 1rem,
+);
+@each $tipoTexto, $sizesLetras in $font-sizes{
+    #{$tipoTexto}{
+        font-size: $sizesLetras;
+    }
+}
