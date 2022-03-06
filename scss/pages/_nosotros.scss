@@ -36,22 +36,30 @@
         .conocenosText{
             text-align: justify;
             .container{
+                .Qmedia525h3{
+                    display: none;
+                }
+                .Qmedia525p{
+                    display: none;
+                }
                 figure.imagenesNosotros{
                     color: white;
                     position: relative;
                     overflow: hidden;
-                    width: 200px;
-                    height: 200px;
+                    width: 325px;
+                    height: 350px;
                     background-color: #000000;
                     text-align: center;
                     margin: auto;
-                    margin-top: 15px;
+                    margin-top: 50px;
                     margin-bottom: 15px;
+                    box-shadow: 0 0.5em 0.5em -0.4em $color-negrito;
+                    border-radius: 2%;
                     img{
                         opacity: 0.9;
-                        margin-top: 5%;
-                        width: 90%;
-                        height: 90%;
+                        margin-top: 3%;
+                        width: 95%;
+                        height: 95%;
                     }
                     figcaption{
                         position: absolute;
@@ -73,7 +81,7 @@
                             font-weight: 300;
                             font-size: 1.1rem;
                             text-transform: uppercase;
-                            margin: 10px 30px 15px 30px;
+                            margin: 10px 30px 30px 30px;
                             -webkit-transform: translate3d(0%, 50%, 0);
                             transform: translate3d(0%, 50%, 0);
                             span{
@@ -82,6 +90,7 @@
                             }
                         }
                         p{
+                            text-align: start;
                             font-size: 0.9rem;
                             font-weight: 200;
                             margin-left: 20px;
@@ -126,12 +135,52 @@
             margin-top: 50px;
             margin-bottom: 30px;
         }
+        iframe{
+            box-shadow: 0 0.5em 0.5em -0.4em $color-negrito;
+            border-radius: 2%;
+        }
         padding: 20px;
         text-align: center;
     }
 }
 
 //Media Querys de Nosotros
+@media (max-width: 1420px){
+    .mainNosotros{
+        .conocenos{
+            .conocenosText{
+                .container{
+                    figure.imagenesNosotros{
+                        width: 250px;
+                        height: 275px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1120px){
+    .mainNosotros{
+        .conocenos{
+            .conocenosText{
+                .container{
+                    figure.imagenesNosotros{
+                        width: 215px;
+                        height: 245px;
+                        figcaption{
+                            h3{
+                                margin: 10px 30px 15px 30px;
+                            }
+                            p{
+                                font-size: 0.75rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1065px){
     .mainNosotros{
         .mapita{
@@ -142,11 +191,25 @@
         }
     }
 }
-
-
 @media (max-width: 1000px){
     .mainNosotros{
         .conocenos{
+            .conocenosText{
+                .container{
+                    figure.imagenesNosotros{
+                        width: 300px;
+                        height: 325px;
+                        figcaption{
+                            h3{
+                                margin: 10px 30px 30px 30px;
+                            }
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
             .nosotrosQmedia{
                 display: none;
             }
@@ -161,6 +224,34 @@
         margin-bottom: 0px;
     }
 }
+@media (max-width: 780px){
+    .mainNosotros{
+        .conocenos{
+            .conocenosText{
+                .container{
+                    figure.imagenesNosotros{
+                        width: 225px;
+                        height: 250px;
+                        figcaption{
+                            h3{
+                                margin: 10px 30px 15px 30px;
+                            }
+                            p{
+                                font-size: 0.75rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .nosotrosQmedia{
+                display: none;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
 @media (max-width: 525px){
     .mainNosotros{
         .conocenos{
@@ -170,7 +261,38 @@
                 }
                 .row{
                     flex-direction: column;
-                    align-content: center
+                    align-content: center;
+                    margin-left: -20px;
+                    .Qmedia525h3{
+                        margin-top: 30px;
+                        margin-bottom: -30px;
+                        display: block;
+                        font-family: $letra-principal;
+                        font-size: 1.5rem;
+                        text-align: center;
+                        margin-left: -50px;
+                    }
+                    .Qmedia525p{
+                        display: block;
+                        font-family: $letra-secundaria;
+                        text-align: start;
+                        margin-left: -50px;
+                    }
+                }
+                .container{
+                    figure.imagenesNosotros{
+                        width: 225px;
+                        height: 250px;
+                        margin-left: -50px;
+                        figcaption{
+                            h3{
+                                display: none;
+                            }
+                            p{
+                                display: none;
+                            }
+                        }
+                    }
                 }
             }
         }
