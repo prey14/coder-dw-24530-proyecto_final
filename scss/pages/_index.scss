@@ -25,47 +25,77 @@ body{
         }
     }
     .proyectos{
+        h2{
+            display: none;
+        }
         display: flex;
-        text-align: center;
         margin-top: 30px;
         @extend %estilosTitulos;
         background-color: $color-principal;
-        img{
-            background-position: center;
-        }
+        align-items: center;
         .brQmedia{
             display: none;
         }
-        .proy-obra{
-            margin-top: 10px;
-            .proyObrasAnimation2{
-                transition: all 1s;
+        figure{
+            transition: all 0.2s;
+            display: flex;
+            margin: 50px;
+            background: $color-negrito;
+            border-radius: 10rem;
+            width: 85%;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            border: 15px double $color-principal;
+            &:hover{ 
+                border-width: 10px;
+                .titleIndex{
+                    transform: translate(0,100px)
+                    }
                 img{
-                    border-radius: 50%;
-                    height: 400px;
-                    width: 400px;
+                    transform: scale(1.5)
                 }
-                &:hover{
-                    opacity: 20%;
+                .descriptionIndex{
+                    opacity: 1;
+                    transform: translateY(-60px);
                 }
+            }
+            & .titleIndex{
+                position: absolute;
+                bottom: 0px;
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+                color: $color-principal;
+                font-size: 25px;
+                transition: all 0.4s;
+                background: $color-negrito;
+            }
+            & img{  
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: all 0.5s;
+                object-fit: cover;
+            }
+            .descriptionIndex{
+                width: 80%;
+                opacity: 0;
+                height: 100px;
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                font-size: 20px;
+                background: rgba(0, 0, 0, 0.5);
+                color: $color-principal;
+                font-family: $letra-secundaria;
+                transition: all 0.3s;
+                text-align: center;
+                padding: 14px
             }
         }
         .idContacto{
             margin-top: 360px;
-        }
-        .proy-ext{
-            margin-top: 10px;
-            .proyExtAnimation2{
-                transition: all 1s;
-                img{
-                    border-radius: 50%;
-                    height: 400px;
-                    width: 400px;
-                }
-                &:hover{
-                    opacity: 20%;
-                }
-            }
         }
     }
     .contacto{
@@ -115,6 +145,71 @@ body{
 }
 
 //Media Querys del index
+@media (max-width: 1830px){
+    .mainIndex{
+        .proyectos{
+            figure{
+                .descriptionIndex{
+                    height: 120px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1750px){
+    .mainIndex{
+        .proyectos{
+            figure{
+                height: 500px;
+            }
+        }
+    }
+}
+@media (max-width: 1480px){
+    .mainIndex{
+        .proyectos{
+            figure{
+                height: 450px;
+            }
+        }
+    }
+}
+@media (max-width: 1435px){
+    .mainIndex{
+        .proyectos{
+            figure{
+                .descriptionIndex{
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1340px){
+    .mainIndex{
+        .proyectos{
+            figure{
+                height: 400px;
+                & .titleIndex{
+                    bottom: 70%;
+                }
+                &:hover{ 
+                    .titleIndex{
+                        transform: translate(0,-100px)
+                    }
+                }
+                .descriptionIndex{
+                    height: 170px;
+                }
+            }
+        }
+        .contacto{
+            h3{
+                margin-top: 40px;
+            }    
+        }
+    }
+}
 @media (max-width: 1320px){
     .mainIndex{
         .proyectos{
@@ -129,6 +224,27 @@ body{
         }
     }
 }
+@media (max-width: 1220px){
+    .mainIndex{
+        .proyectos{
+            h2{
+                display: block;
+                text-align: center;
+            }
+            figure{
+                border-radius: 50%;
+                & .titleIndex{
+                    display: none;
+                }
+            }
+        }
+        .contacto{
+            h3{
+                margin-top: 30px;
+            }    
+        }
+    }
+}
 @media (max-width: 1190px){
     .mainIndex{
         .slogan{
@@ -140,31 +256,54 @@ body{
             h2{
                 font-size: 2rem;
             }
-            .proy-obra{
-                .proyObrasAnimation2{
-                    img{
-                        width: 80%;
-                        height: 80%;
+            figure{
+                height: 370px;
+                .descriptionIndex{
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    p{
+                        margin-top: 30%;
                     }
                 }
-            }
-            .proy-ext{
-                .proyExtAnimation2{
-                    img{
-                        width: 80%;
-                        height: 80%;
+                &:hover{
+                    .descriptionIndex{
+                        transform: translateY(0px);
                     }
                 }
             }
         }
+    }
+}
+@media (max-width: 975px){
+    .mainIndex{
+        .proyectos{
+            figure{
+                height: 300px;
+            }
+        }
         .contacto{
-            margin-bottom: 0px;
+            h3{
+                margin-top: 55px;
+            }    
         }
     }
 }
 @media (max-width: 900px){
     .mainIndex{
         .proyectos{
+            text-align: center;
+            figure{
+                width: 100%;
+                height: 350px;
+                margin: 0;
+                .descriptionIndex{
+                    p{
+                        margin-top: 25%;
+                    }
+                }
+            }
             h2{
                 .brQmedia{
                     display: block;
@@ -173,21 +312,25 @@ body{
         }
     }
 }
+@media (max-width: 820px){
+    .mainIndex{
+        .proyectos{
+            figure{
+                height: 320px;
+            }
+        }
+    }
+}
 @media (max-width: 800px){
     .mainIndex{
         .contacto{
-            margin-top: 10px;
+            h3{
+                margin-top: 80px;
+            }
         }
     }
 }
-@media (max-width: 700px){
-    .mainIndex{
-        .contacto{
-            margin-top: -20px;
-        }
-    }
-}
-@media (max-width: 670px){
+@media (max-width: 715px){
     .mainIndex{
         .slogan{
             p{
@@ -206,66 +349,82 @@ body{
                 }
             }
         }
-    }
-}
-@media (max-width: 600px){
-    .mainIndex{
-        .contacto{
-            margin-top: -40px;
+        .proyectos{
+            h2{
+                text-align: center;
+            }
+            flex-direction: column;
+            .col-5{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                align-items: center
+            }
+            padding: 0px;
+            figure{
+                width: 350px;
+                height: 350px;
+                align-content: center;
+                margin: 0px;
+                &:hover{
+                    border-width: 15px;
+                    .titleIndex{
+                        transform: none;
+                    }
+                    img{
+                        transform: none;
+                    }
+                    .descriptionIndex{
+                        opacity: 0;
+                        transform: none;
+                    }
+                }
+                img{
+                    transition: none;
+                    border-radius: 50%;
+                    border: 8px double $color-negrito;
+                }
+                .descriptionIndex{
+                    display: none;
+                }
+            }
+            .idContacto{
+                height: 100px;
+                margin: 0;
+                padding: 0;
+            }
+            .idContactoSN{
+                display: none;
+            }
         }
-    }
-}
-@media (max-width: 500px){
-    .mainIndex{
         .contacto{
-            margin-top: -80px;
-        }
+            h3{
+                margin-top: 30px;
+            }
+        }  
     }
 }
 @media (max-width: 475px){
     .mainIndex{
         .slogan{
             h1{
-                font-size: 2rem;
+                font-size: 2.75rem;
             }
-        }
-        .proyectos{
-            h2{
-                font-size: 1.5rem;
+            p{
+                font-size: 0.85rem;
             }
-        }
-        .contacto{
-            margin-top: -140px;
         }
     }
 }
-@media (max-width: 360px){
+@media (max-width: 415px){
     .mainIndex{
         .slogan{
             h1{
-                font-size: 1.5rem;
+                font-size: 2.5rem;
             }
             p{
-                font-size: 0.8rem;
-                line-height: 30px;
-            }
-        }
-        .proyectos{
-            h2{
-                font-size: 1.25rem;
-            }
-        }
-        .contacto{
-            margin-top: -200px;
-            .contactForm{
-                width: 200px;
-                input{
-                    width: 200px;
-                }
-                textarea{
-                    width: 200px;
-                    height: 150px;
-                }
+                font-size: 0.75rem;
             }
         }
     }

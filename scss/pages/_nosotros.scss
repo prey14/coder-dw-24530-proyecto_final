@@ -7,19 +7,29 @@
         margin-left: 0.25px;
         .conocenosImg{
             background-image: url(../images/img-nosotros/fondo-nosotros.jpg);
-            background-repeat: no-repeat;
             height: ($img-grande)+($img-mediana);
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: hidden;
             h2{
                 margin-top: 30px;
                 text-align: center;
                 letter-spacing: 10px;
-                color: black;
+                color: $color-principal;
+                background: rgba(0, 0, 0, 0.5);
+                letter-spacing: 0.45rem;
+                line-height: 1;
                 @extend %estilosTitulos;
                 &:hover{
                     transform: scale(1.1);
                     transition-property: all;
                     transition-duration: 1s;
                     cursor: default;
+                }
+                span{
+                    font-family: $letra-secundaria;
+                    font-size: 2rem;
+                    letter-spacing: 0.05rem;
                 }
             }
         }
@@ -108,9 +118,32 @@
             font-size: 1.2rem;
         }
     }
+    .mapita{
+        h3{
+            text-align: center;
+            text-shadow: 5px 5px 5px dimgray;
+            font-family: $letra-principal;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 //Media Querys de Nosotros
+@media (max-width: 1065px){
+    .mainNosotros{
+        .mapita{
+            iframe{
+                width: 90%;
+                height: 400px;
+            }
+        }
+    }
+}
+
+
 @media (max-width: 1000px){
     .mainNosotros{
         .conocenos{
