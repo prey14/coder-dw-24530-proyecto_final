@@ -43,18 +43,22 @@ header{
         }
     }
 }
-
-@media (max-width: 475px){
+@media (max-width: 525px){
     header{
         .navbar{
+            .btn{
+                &:hover{
+                    transform: none;
+                    transition: none;
+                }
+            }
             .navbar-brand{
                 img{
                     width: 180px;
                     height: 100px;
                     &:hover{
-                        transform: scale(1.05);
-                        transition-property: all;
-                        transition-duration: 1s;
+                        transform: none;
+                        transition: none;
                     }
                 }    
             }

@@ -221,6 +221,19 @@ footer{
             h3{
                 font-size: 1.5rem;
             }
+            li{
+                button{
+                    transition: none;
+                    background-color: $color-negrito;
+                    color: $color-principal;
+                    border-color: black;
+                    box-shadow: 0 0.5em 0.5em -0.4em $color-negrito;
+                    &:hover,
+                    &:focus {
+                        transform: none;
+                    }
+                }
+            }
         }
         .textCopy{
             h4{

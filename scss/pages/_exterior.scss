@@ -8,6 +8,12 @@
         @extend %estilosSubTitulos;
         margin-top: 50px;
     }
+    .Qmedia747h4{
+        display: none;
+    }
+    .Qmedia747p{
+        display: none;
+    }
     figure.imagenesExterior{
         font-family: $letra-principal;
         color: #fff;
@@ -106,8 +112,45 @@
 }
 
 //Media Querys de Exterior
+@media (max-width: 747px){
+    .mainExt{
+        figure.imagenesExterior{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            &:hover{
+                img{
+                    transition: none;
+                    transform: none;
+                    opacity: 1;
+                }
+            }
+        }
+        figcaption{
+            h4{
+                display: none;
+            }
+            p{
+                display: none;
+            }
+            
+        }
+        .Qmedia747h4{
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-family: $letra-principal;
+            text-decoration: underline;
+        }
+        .Qmedia747p{
+            display: block;
+            text-align: center;
+            font-family: $letra-secundaria;
+        }
+    }
+}
 @media (max-width: 390px){
-    .mainObras{
+    .mainExt{
         figure{
             width: 80%;
             height: 80%;

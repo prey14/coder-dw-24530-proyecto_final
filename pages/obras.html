@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Graduate&display=swap" rel="stylesheet">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Ícono de pestaña para las páginas -->
     <link rel="shortcut icon" href="../images/portafolio.png" type="image/x-icon">
     <title>BARR.ARQ. | Obras</title>
@@ -28,7 +30,7 @@
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #D9D9D9;">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+                        <a class="navbar-brand animate__animated animate__fadeInRightBig" href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                         <span class="navbar-toggler-icon"></span>
                         </button>
@@ -37,7 +39,7 @@
                                 <p class="offcanvas-title" id="offcanvasNavbarLabel">BARR. ARQ. <br> <span class="subTitulo">Sólido Construcciones</span></p>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body">
+                            <div class="offcanvas-body animate__animated animate__fadeInLeftBig">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li class="nav-item">
                                         <a class="nav-link" href="../index.html"><button class="btn btn-sm btn-outline-dark" type="button">INICIO</button></a>
@@ -66,7 +68,7 @@
             <div class="row slogPagesProy">
                 <div class="col">
                     <div>
-                        <h1>Proyectos de obras</h1>
+                        <h1 class="animate__animated animate__flipInX">Proyectos de obras</h1>
                     </div>
                 </div>
             </div>
@@ -78,26 +80,26 @@
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner carouselesObEx">
                             <div class="carousel-item active">
                                 <a href="#BarrioJardin"><img src="../images/img-obras/carousel-obra01.jpg" class="d-block w-100" alt="Obras en Barrio Jardín"></a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <a href="#BarrioJardin"><h2>Barrio Jardín</h2></a>
-                                    <p>Some representative placeholder content for the first slide.</p>
+                                    <p>Encontrá la vivienda que estás buscando en uno de los barrios más lindos de San Martín Mendoza</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <a href="#BarrioSanPedro"><img src="../images/img-obras/carousel-obra02.jpg" class="d-block w-100" alt="Obras en Barrio San Pedro"></a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <a href="#BarrioSanPedro"><h2>Barrio San Pedro</h2></a>
-                                    <p>Some representative placeholder content for the second slide.</p>
+                                    <p>Encontrá la vivienda que estás buscando en uno de los barrios más pintorescos de San Martín Mendoza</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <a href="#BarrioTrebol"><img src="../images/img-obras/carousel-obra03.jpg" class="d-block w-100" alt="Obras en Barrio El Trébol"></a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <a href="#BarrioTrebol"><h2>Barrio El Trébol</h2></a>
-                                    <p>Some representative placeholder content for the third slide.</p>
+                                    <p>Encontrá la vivienda que estás buscando en uno de los barrios más exclusivos de San Martín Mendoza</p>
                                 </div>
                             </div>
                         </div>
@@ -116,20 +118,63 @@
                 <p id="BarrioJardin"></p>
                 <h3>Barrio Jardín</h3>
                 <div class="col">
-                    <figure class="img01">
-                        <figcaption><h4>Lorem, ipsum dolor</h4></figcaption>
-                        <a href="../index.html#Contacto"><img src="../images/img-obras/obra001.png" alt="Barrio Jardín Calle 01"></a>
+                    <figure id="carouselExampleInterval1" class="carousel slide img01" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <figcaption><h4>Calle Las Violetas 322</h4></figcaption>
+                            <div class="carousel-item active">
+                                <img src="../images/img-obras/obra001a.png" class="d-block w-100" alt="Barrio Jardín Calle 01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra001b.jpeg" class="d-block w-100" alt="Barrio Jardín Calle 01 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra001c.jpeg" class="d-block w-100" alt="Barrio Jardín Calle 01 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra001d.jpeg" class="d-block w-100" alt="Barrio Jardín Calle 01 por dentro">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                         <figcaption>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi cupiditate beatae, quam illo iste ea? Numquam consectetur, eos vero ipsa sapiente deleniti, eligendi porro expedita quos cumque enim magni.</p>
+                            <p>Vivienda ubicada en el Barrio Jardín – San Martín Mendoza de 200m². Cuenta con 4 habitaciones, 3 baños, living comedor, quincho, amplio jardín y patio.
+                            </p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="col">
-                    <figure class="img02">
-                        <figcaption><h4>Lorem, ipsum dolor</h4></figcaption>
-                        <a href="../index.html#Contacto"><img src="../images/img-obras/obra002.png" alt="Barrio Jardín Calle 02"></a>
+                    <figure id="carouselExampleInterval2" class="carousel slide img02" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <figcaption><h4>Calle Las Camelias 415</h4></figcaption>
+                            <div class="carousel-item active">
+                                <img src="../images/img-obras/obra002a.png" class="d-block w-100" alt="Barrio Jardín Calle 02">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra002b.jpeg" class="d-block w-100" alt="Barrio Jardín Calle 02 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra002c.jpeg" class="d-block w-100" alt="Barrio Jardín Calle 02 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra002d.jpeg" class="d-block w-100" alt="Barrio Jardín Calle 02 por dentro">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                         <figcaption>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi cupiditate beatae, quam illo iste ea? Numquam consectetur, eos vero ipsa sapiente deleniti, eligendi porro expedita quos cumque enim magni.</p>
+                            <p>Vivienda ubicada en el Barrio Jardín – San Martín Mendoza de 150m². Cuenta con 3 habitaciones, 2 baños, living comedor, quincho, amplio jardín y patio.</p>
                         </figcaption>
                     </figure>
                 </div>
@@ -138,20 +183,62 @@
                 <p id="BarrioSanPedro"></p>
                 <h3>Barrio San Pedro</h3>
                 <div class="col">
-                    <figure class="img03">
-                        <figcaption><h4>Lorem, ipsum dolor</h4></figcaption>
-                        <a href="../index.html#Contacto"><img src="../images/img-obras/obra003.png" alt="Barrio San Pedro Calle 01"></a>
+                    <figure id="carouselExampleInterval3" class="carousel slide img03" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <figcaption><h4>Calle Los Álamos 739</h4></figcaption>
+                            <div class="carousel-item active">
+                                <img src="../images/img-obras/obra003a.png" class="d-block w-100" alt="Barrio San Pedro Calle 01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra003b.jpeg" class="d-block w-100" alt="Barrio San Pedro 01 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra003c.jpeg" class="d-block w-100" alt="Barrio San Pedro 01 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra003d.jpeg" class="d-block w-100" alt="Barrio San Pedro 01 por dentro">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                         <figcaption>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi cupiditate beatae, quam illo iste ea? Numquam consectetur, eos vero ipsa sapiente deleniti, eligendi porro expedita quos cumque enim magni.</p>
+                            <p>Esta casa se destaca por sus detalles de diseño, espacios amplios, luminosos y ventilados. Todos los espacios poseen luz natural. Losa radiante. Doble vidrio hermético en todas las aberturas (DVH). Carpintería de aluminio. Muebles de cocina Johnson. Consta de 230m² distribuídos en 4 habitaciones, 3 baños, living comedor, amplio jardín, patio y parrilla.</p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="col">
-                    <figure class="img04">
-                        <figcaption><h4>Lorem, ipsum dolor</h4></figcaption>
-                        <a href="../index.html#Contacto"><img src="../images/img-obras/obra004.png" alt="Barrio San Pedro Calle 02"></a>
+                    <figure id="carouselExampleInterval4" class="carousel slide img04" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <figcaption><h4>Calle El Pinar 58</h4></figcaption>
+                            <div class="carousel-item active">
+                                <img src="../images/img-obras/obra004a.png" class="d-block w-100" alt="Barrio San Pedro Calle 02">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra004b.jpeg" class="d-block w-100" alt="Barrio San Pedro 02 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra004c.jpeg" class="d-block w-100" alt="Barrio San Pedro 02 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra004d.jpeg" class="d-block w-100" alt="Barrio San Pedro 02 por dentro">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                         <figcaption>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi cupiditate beatae, quam illo iste ea? Numquam consectetur, eos vero ipsa sapiente deleniti, eligendi porro expedita quos cumque enim magni.</p>
+                            <p>Esta casa se destaca por sus detalles de diseño, espacios amplios, luminosos y ventilados. Todos los espacios poseen luz natural. Losa radiante. Doble vidrio hermético en todas las aberturas (DVH). Carpintería de aluminio. Muebles de cocina Johnson. Consta de 170m² distribuídos en 2 habitaciones, 2 baños, living comedor, amplio jardín, patio y parrilla.</p>
                         </figcaption>
                     </figure>
                 </div>
@@ -160,20 +247,62 @@
                 <p id="BarrioTrebol"></p>
                 <h3>Barrio El Trébol</h3>
                 <div class="col">
-                    <figure class="img05">
-                        <figcaption><h4>Lorem, ipsum dolor</h4></figcaption>
-                        <a href="../index.html#Contacto"><img src="../images/img-obras/obra005.png" alt="Barrio El Trébol Calle 01"></a>
+                    <figure id="carouselExampleInterval5" class="carousel slide img05" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <figcaption><h4>Calle Guayaquil 930</h4></figcaption>
+                            <div class="carousel-item active">
+                                <img src="../images/img-obras/obra005a.png" class="d-block w-100" alt="Barrio El Trebol Calle 01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra005b.jpeg" class="d-block w-100" alt="Barrio El Trebol Calle 01 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra005c.jpeg" class="d-block w-100" alt="Barrio El Trebol Calle 01 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra005d.jpeg" class="d-block w-100" alt="Barrio El Trebol Calle 01 por dentro">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                         <figcaption>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi cupiditate beatae, quam illo iste ea? Numquam consectetur, eos vero ipsa sapiente deleniti, eligendi porro expedita quos cumque enim magni.</p>
+                            <p>Hermosa casa con amplio jardín y piscina en exclusivo barrio privado. Diseño único con rincones pensados en detalle e imponentes vistas a la Cordillera de los Andes. Con 400m² cuenta con 7 habitaciones, 4 baños, living comedor, quincho, pileta, amplio jardín, patio y excelente vista.</p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="col">
-                    <figure class="img06">
-                        <figcaption><h4>Lorem, ipsum dolor</h4></figcaption>
-                        <a href="../index.html#Contacto"><img src="../images/img-obras/obra006.png" alt="Barrio El Trébol Calle 02"></a>
+                    <figure id="carouselExampleInterval6" class="carousel slide img06" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <figcaption><h4>Calle Soler 117</h4></figcaption>
+                            <div class="carousel-item active">
+                                <img src="../images/img-obras/obra006a.png" class="d-block w-100" alt="Barrio El Trebol Calle 02">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra006b.jpeg" class="d-block w-100" alt="Barrio El Trebol Calle 02 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra006c.jpeg" class="d-block w-100" alt="Barrio El Trebol Calle 02 por dentro">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/img-obras/obra006d.jpeg" class="d-block w-100" alt="Barrio El Trebol Calle 02 por dentro">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                         <figcaption>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quasi cupiditate beatae, quam illo iste ea? Numquam consectetur, eos vero ipsa sapiente deleniti, eligendi porro expedita quos cumque enim magni.</p>
+                            <p>Hermosa casa con amplio jardín y piscina en exclusivo barrio privado. Diseño único con rincones pensados en detalle e imponentes vistas a la Cordillera de los Andes. Con 320m² cuenta con 6 habitaciones, 3 baños, living comedor, quincho, pileta, amplio jardín, patio y excelente vista.</p>
                         </figcaption>
                     </figure>
                 </div>
