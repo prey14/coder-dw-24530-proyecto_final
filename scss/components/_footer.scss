@@ -79,6 +79,19 @@ footer{
     .copy{
         text-align: center;
         display: flex;
+        .textCopy{
+            span{
+                a{
+                    text-decoration: none;
+                    color: $color-negrito;
+                    font-weight: 1000;
+                    &:hover{
+                        text-decoration: underline;
+                        color: rgb(1, 85, 1);
+                    }
+                }
+            }
+        }
         ul{
             line-height: 1;
             list-style: none;
