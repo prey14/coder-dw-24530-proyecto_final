@@ -35,3 +35,15 @@
         text-decoration: none;
     }
 }
+
+
+@media (max-width: 525px){
+    .carouselesObEx{
+        &:hover{
+            img{
+                transform: none;
+                transition: none;
+            }
+        }
+    }
+}

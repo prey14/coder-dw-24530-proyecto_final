@@ -809,6 +809,11 @@ header .navbar {
 .carouselesObEx a {
   text-decoration: none; }
 
+@media (max-width: 525px) {
+  .carouselesObEx:hover img {
+    transform: none;
+    transition: none; } }
+
 footer {
   background-color: #cac6c6b7;
   display: flex;
